@@ -233,7 +233,7 @@ public class HydraqlTemplateImpl implements HydraqlTemplate {
     @Override
     public boolean shellSessionIsConnected() {
         HBaseShellSession shellSession = HBaseShellSessionManager.getHBaseShellSession(this.getConf().toProp());
-        return shellSession.isConnected();
+        return shellSession.isSessionConnected();
     }
 
     @Override
